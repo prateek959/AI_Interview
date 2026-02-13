@@ -20,7 +20,7 @@ const Interview_page = () => {
         formData.append("resume", resumeFile);
 
         const response = await axios.post(
-          "http://localhost:3001/api/interview/upload",
+          "https://ai-interview-zdo8.onrender.com/api/interview/upload",
           formData,
           {
             headers: {
@@ -51,7 +51,7 @@ const Interview_page = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/interview/answer",
+        "https://ai-interview-zdo8.onrender.com/api/interview/answer",
         {
           resumeText,
           answer,
